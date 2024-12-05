@@ -50,14 +50,14 @@ section {
   z-index: -10;
   height: 56px;
   position: absolute;
-  top: -200px;
+  top: -100px;
   right: 0;
   animation: 5s ease-in-out 1s infinite slidein;
 }
 
 @keyframes slidein {
   from {
-    top: -200px;
+    top: -100px;
   }
   to {
     top: calc(100vh + 100px);

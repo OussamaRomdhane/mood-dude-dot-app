@@ -11,8 +11,6 @@ const getRandomInRange = (min: number, max: number) =>
 
 export default function AnimatedMoodDudes() {
   useEffect(() => {
-    document.body.style.overflowY = "hidden";
-
     let i = 0;
     refsMap.forEach((value) => {
       i++;
@@ -21,10 +19,17 @@ export default function AnimatedMoodDudes() {
       if (value != null) {
         value.style.right = `${-50 + position}px`;
         value.style.animationDuration = `${getRandomInRange(10, 40)}s`;
-        value.style.animationDelay = `${getRandomInRange(5, 10)}s`;
+        value.style.animationDelay = `${getRandomInRange(0, 10)}s`;
       }
     });
   }, [refsMap.size]);
+
+  useEffect(() => {
+    document.body.style.overflowY = "hidden";
+    return () => {
+      document.body.style.overflowY = "auto";
+    };
+  }, []);
 
   return (
     <>
