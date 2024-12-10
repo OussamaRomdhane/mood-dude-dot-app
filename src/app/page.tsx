@@ -10,7 +10,7 @@ export default function Home() {
       <Nav />
       <AnimatedMoodDudes />
       <section className="w-12/12 flex flex-wrap items-center justify-center box-border space-x-0">
-        <a href="#" target="_blank" className="inline-block">
+        <a href="https://play.google.com/store/apps/details?id=com.eiilo.mood.dude.android" target="_blank" className="inline-block">
           <Image
             src="/get-it-google-play.png"
             alt="Get it on Google Play"
