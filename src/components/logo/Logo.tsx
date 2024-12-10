@@ -1,13 +1,15 @@
 import { Silkscreen } from "next/font/google";
+import Link from "next/link";
 
 const silkscreen = Silkscreen({ weight: "400", subsets: ["latin"] });
 
 export default function Logo() {
   return (
-    <h1
-      className={`${silkscreen.className} text-9xl text-emerald-700 shadow-emerald-600 dark:text-gray-500 dark:shadow-gray-900 w-full flex justify-center items-center`}
+    <Link
+      href="/"
+      className={`${silkscreen.className} text-8xl text-emerald-700 shadow-emerald-600 w-full flex justify-center items-center md:text-9xl`}
     >
-      Mood Dude
-    </h1>
+      <h1>Mood Dude</h1>
+    </Link>
   );
 }

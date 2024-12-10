@@ -5,7 +5,7 @@ import Nav from "@/components/nav/Nav";
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-8 row-start-2 items-center justify-center overflow-hidden h-screen mt-6 mb-24 z-10">
+    <main className="flex flex-col gap-8 row-start-2 items-center justify-center overflow-hidden h-svh mt-6 mb-24 z-10">
       <Logo />
       <Nav />
       <AnimatedMoodDudes />

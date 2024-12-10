@@ -7,8 +7,10 @@ export default function Home() {
       <Logo />
       <Nav />
       <section className="p-8 w-full box-border flex flex-col gap-6">
-        <header className="w-screen flex-col flex flex-wrap items-start justify-center">
-          <h2 className="text-3xl font-bold">Privacy Policy for Mood Dude</h2>
+        <header className="flex-col flex flex-wrap items-start justify-center">
+          <h2 className="text-3xl font-bold inline-block">
+            Privacy Policy for Mood Dude
+          </h2>
           <p>
             <strong>Effective Date:</strong> 05/12/2024
           </p>
